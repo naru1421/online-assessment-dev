@@ -7,7 +7,7 @@ public class Customer {
 
 	private  long id;
 	private  String name;
-	private  String status;
+	private boolean status;
 	private String emailId;
 
 	public void setId(long id) {
@@ -18,19 +18,15 @@ public class Customer {
 		this.name = name;
 	}
 
-	public String getStatus() {
+	public boolean isStatus() {
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 
-	public void setLastLoggedIn(Date lastLoggedIn) {
-		this.lastLoggedIn = lastLoggedIn;
-	}
 
-	private  Date lastLoggedIn;
 
 	public long getId() {
 		return id;
@@ -40,7 +36,4 @@ public class Customer {
 		return name;
 	}
 
-	public Date getLastLoggedIn() {
-		return lastLoggedIn;
 	}
-}

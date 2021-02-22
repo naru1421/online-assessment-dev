@@ -11,7 +11,7 @@ insert into Customer(name,email,status) values
 ('Andre Agassi','AndreAgassi@example.com',0),
 ('Steffi Graf','SteffiGraf@example.com',0);
 
-insert into Orders(customerId,totalCost, orderStatus) values
+insert into OrderData(customerId,totalCost, status) values
 (2,20,'COMPLETED'),
 (8,30,'CREATED'),
 (2,90,'COMPLETED'),
