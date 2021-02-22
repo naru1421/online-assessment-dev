@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS CUSTOMER;
+
+CREATE TABLE CUSTOMER (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  name VARCHAR(250) NOT NULL,
+  email VARCHAR(250) DEFAULT NULL,
+  status BOOLEAN DEFAULT TRUE
+);
+
+CREATE TABLE ORDERS (
+    id bigint auto_increment primary key,
+    customerId int,
+    totalCost DECIMAL(20, 2),
+    orderStatus enum('CREATED','INPROGRESS','SHIPPED','COMPLETED','REVIEW')
+
+);
