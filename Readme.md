@@ -10,6 +10,6 @@ http://localhost:8080/h2-console (jdbc url = jdbc:h2:mem:testdb, user = sa, blan
 http://localhost:8080/registeredCustomersNotOrderedYet
 http://localhost:8080/orderValueFromActiveCustomers
 
-### implementation strategy
+### Implementation strategy
 Please use only repository CRUD methods and service layers to implement the business logic.
 Please add unit tests and exception handling.
